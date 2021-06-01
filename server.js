@@ -11,7 +11,7 @@ const image = require("./controlers/image");
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    host: "postgresql-curly-92768",
     user: "postgres",
     password: "Assasins123",
     database: "smart-brain",
@@ -30,7 +30,7 @@ app.use(cors()); //to remove the security error while connecting the server and 
 //root
 
 app.get("/", (req, res) => {
-  res.send("Hello! Welcome to localhost:3000/");
+  res.send("Hello! Welcome to root");
 });
 
 // Signin
